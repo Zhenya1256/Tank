@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tank", "Tank\Tank.csproj", "{DC10A890-D2BE-421B-934D-B64B6F7F0DDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TanlBl", "TanlBl\TanlBl.csproj", "{B1BE6B22-9946-4DD8-AEB8-FE77FB1EA4BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC10A890-D2BE-421B-934D-B64B6F7F0DDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC10A890-D2BE-421B-934D-B64B6F7F0DDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC10A890-D2BE-421B-934D-B64B6F7F0DDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC10A890-D2BE-421B-934D-B64B6F7F0DDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1BE6B22-9946-4DD8-AEB8-FE77FB1EA4BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1BE6B22-9946-4DD8-AEB8-FE77FB1EA4BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1BE6B22-9946-4DD8-AEB8-FE77FB1EA4BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1BE6B22-9946-4DD8-AEB8-FE77FB1EA4BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

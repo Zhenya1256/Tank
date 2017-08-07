@@ -12,5 +12,6 @@ namespace TankView.Abstract
         event Action<string[][], string[], string, string, int, int> Click_right;
         event Action<string[][], string[], string, string, int, int> Click_down;
         event Action<string[][], string[], string, string, int, int> Click_up;
+        event Action<string[][], string, string, string,string,string, int, int> Click_Shoot;
     }
 }

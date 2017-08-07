@@ -130,24 +130,24 @@ namespace TankModel
 
             if (tank.Equals(tankDown))
             {
-                ShootDown(tank, x, y);
+                ShootDown(frameOfPlay,  tank,  emptyCell, x, y);
             }
             if (tank.Equals(tankUp))
             {
-                ShootUp(tank, x, y);
+                ShootUp(frameOfPlay, tank, emptyCell, x, y);
             }
             if (tank.Equals(tankRight))
             {
-                ShootRigth(tank, x, y);
+                ShootRigth(frameOfPlay, tank, emptyCell, x, y);
             }
             if (tank.Equals(tankLeft))
             {
-                ShootLeft(tank, x, y);
+                ShootLeft(frameOfPlay, tank, emptyCell, x, y);
             }
 
         }
 
-        public void ShootUp((string[][] frameOfPlay,string tank, string emtyCell, int x, int y)
+        private void ShootUp(string[][] frameOfPlay,string tank, string emtyCell, int x, int y)
         {
 
             int i = 1;
@@ -168,12 +168,12 @@ namespace TankModel
                     break;
                 }
                 Thread.Sleep(100);
-                frameOfPlay[x - i][y] = shootGor;
+                frameOfPlay[x - i][y] = "-";
 
-                if (tank != _frameOfPlay[x - i + 1][y])
+                if (tank != frameOfPlay[x - i + 1][y])
                 {
 
-                    _frameOfPlay[x - i + 1][y] = _emtyCell;
+                    frameOfPlay[x - i + 1][y] = emtyCell;
                 }
 
                 i++;
@@ -183,7 +183,7 @@ namespace TankModel
 
         }
 
-        public void ShootDown(string tank, int x, int y)
+        private void ShootDown(string[][] frameOfPlay, string tank, string emtyCell, int x, int y)
         {
 
             int i = 1;
@@ -191,25 +191,25 @@ namespace TankModel
 
             while (true)
             {
-                if (_frameOfPlay[x + i][y] != _emtyCell)
+                if (frameOfPlay[x + i][y] != emtyCell)
                 {
                     if ((x + i) < 24)
                     {
-                        _frameOfPlay[x + i][y] = _emtyCell;
+                        frameOfPlay[x + i][y] = emtyCell;
                     }
-                    if (_frameOfPlay[x + i - 1][y] != _tankDown)
+                    if (frameOfPlay[x + i - 1][y] != tank)
                     {
-                        _frameOfPlay[x + i - 1][y] = _emtyCell;
+                        frameOfPlay[x + i - 1][y] = emtyCell;
                     }
                     // frame.Render();
                     break;
                 }
                 Thread.Sleep(100);
-                _frameOfPlay[x + i][y] = _shootGor;
+                frameOfPlay[x + i][y] = "-";
 
-                if (tank != _frameOfPlay[x + i - 1][y])
+                if (tank != frameOfPlay[x + i - 1][y])
                 {
-                    _frameOfPlay[x + i - 1][y] = _emtyCell;
+                    frameOfPlay[x + i - 1][y] = emtyCell;
                 }
 
                 i++;
@@ -220,7 +220,7 @@ namespace TankModel
 
         }
 
-        public void ShootLeft(string tank, int x, int y)
+        private void ShootLeft(string[][] frameOfPlay, string tank, string emtyCell, int x, int y)
         {
 
             int i = 1;
@@ -228,26 +228,26 @@ namespace TankModel
 
             while (true)
             {
-                if (_frameOfPlay[x][y - i] != _emtyCell)
+                if (frameOfPlay[x][y - i] != emtyCell)
                 {
                     if ((y - i) > 0)
                     {
-                        _frameOfPlay[x][y - i] = _emtyCell;
+                        frameOfPlay[x][y - i] = emtyCell;
                     }
-                    if (_frameOfPlay[x][y - i + 1] != _tankLeft)
+                    if (frameOfPlay[x][y - i + 1] != tank)
                     {
-                        _frameOfPlay[x][y - i + 1] = _emtyCell;
+                        frameOfPlay[x][y - i + 1] = emtyCell;
                     }
                     // frame.Render();
                     break;
                 }
                 Thread.Sleep(100);
-                _frameOfPlay[x][y - i] = _shootVer;
+                frameOfPlay[x][y - i] = "|";
 
-                if (tank != _frameOfPlay[x][y - i + 1])
+                if (tank != frameOfPlay[x][y - i + 1])
                 {
 
-                    _frameOfPlay[x][y - i + 1] = _emtyCell;
+                    frameOfPlay[x][y - i + 1] = emtyCell;
                 }
 
                 i++;
@@ -259,33 +259,33 @@ namespace TankModel
 
         }
 
-        public void ShootRigth(string tank, int x, int y)
+        private void ShootRigth(string[][] frameOfPlay, string tank, string emtyCell, int x, int y)
         {
 
             int i = 1;
 
             while (true)
             {
-                if (_frameOfPlay[x][y + i] != _emtyCell)
+                if (frameOfPlay[x][y + i] != emtyCell)
                 {
                     if ((y + i) < 74)
                     {
-                        _frameOfPlay[x][y + i] = _emtyCell;
+                        frameOfPlay[x][y + i] = emtyCell;
                     }
-                    if (_frameOfPlay[x][y + i - 1] != _tankRihgt)
+                    if (frameOfPlay[x][y + i - 1] != tank)
                     {
-                        _frameOfPlay[x][y + i - 1] = _emtyCell;
+                        frameOfPlay[x][y + i - 1] = emtyCell;
                     }
                     // frame.Render();
                     break;
                 }
                 Thread.Sleep(100);
-                _frameOfPlay[x][y + i] = _shootVer;
+                frameOfPlay[x][y + i] = "|";
 
-                if (tank != _frameOfPlay[x][y + i - 1])
+                if (tank != frameOfPlay[x][y + i - 1])
                 {
 
-                    _frameOfPlay[x][y + i - 1] = _emtyCell;
+                    frameOfPlay[x][y + i - 1] = emtyCell;
                 }
 
                 i++;

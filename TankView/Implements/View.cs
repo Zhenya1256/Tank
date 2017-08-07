@@ -21,6 +21,7 @@ namespace TankView.Implements
         public event Action<string[][], string[], string, string, int, int> Click_down;
         public event Action<string[][], string[], string, string, int, int> Click_up;
         public event Action<string[][], string[], string, string, int, int> Click_right;
+        public event Action<string[][], string, string, string, string, string, int, int> Click_Shoot;
 
         public View()
         {
@@ -35,16 +36,14 @@ namespace TankView.Implements
 
         public void Click()
         {
-
             while (true)
             {
-                Thread.Sleep(400);
                 ConsoleKeyInfo info = Console.ReadKey();
                 if (info.Key == ConsoleKey.LeftArrow)
                 {
                     if (Click_left != null)
                     {
-                         Click_left(_panel, Sprits.GetSpritsTank(), Sprits.tankLeft, Sprits.emptyCell, _width, _hight);
+                        Click_left(_panel, Sprits.GetSpritsTank(), Sprits.tankLeft, Sprits.emptyCell, _width, _hight);
                     }
                 }
                 if (info.Key == ConsoleKey.DownArrow)
@@ -68,12 +67,31 @@ namespace TankView.Implements
                         Click_right(_panel, Sprits.GetSpritsTank(), Sprits.tankRihgt, Sprits.emptyCell, _width, _hight);
                     }
                 }
-                _draw.Render();
-
+              
+                    if (info.Key == ConsoleKey.Spacebar)
+                    {
+                   
+                          if (Click_Shoot != null)
+                          {
+                              Click_Shoot(_panel, Sprits.tankUp, Sprits.tankLeft, Sprits.tankDown, Sprits.tankRihgt, Sprits.emptyCell, _width, _hight);
+                          }
+                     
+                    }
+                
+               
             }
 
 
          }
+
+        public void Render()
+        {
+            while (true)
+            {
+                Thread.Sleep(20);
+                _draw.Render();
+            }
+        }
 
     }
 }

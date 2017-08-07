@@ -121,6 +121,9 @@ namespace Tank
             d.Click_down += tank.MoveToDown;
             d.Click_right += tank.MoveToRight;
             d.Click_up += tank.MoveToUp;
+            d.Click_Shoot += tank.Shoot;
+            
+            new Task(d.Render).Start();
             d.Click();
         }
     }

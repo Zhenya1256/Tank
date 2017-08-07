@@ -1,0 +1,4 @@
+E:\ProjecktC#\Tank\MyClasssLibrery\bin\Debug\MyClasssLibrery.dll
+E:\ProjecktC#\Tank\MyClasssLibrery\bin\Debug\MyClasssLibrery.pdb
+E:\ProjecktC#\Tank\MyClasssLibrery\obj\Debug\MyClasssLibrery.dll
+E:\ProjecktC#\Tank\MyClasssLibrery\obj\Debug\MyClasssLibrery.pdb

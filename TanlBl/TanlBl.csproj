@@ -50,6 +50,7 @@
     <Compile Include="Implements\Panel\GameOvercs.cs" />
     <Compile Include="Implements\Panel\AllThread.cs" />
     <Compile Include="Implements\Panel\MainMenu.cs" />
+    <Compile Include="Printer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

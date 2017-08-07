@@ -14,10 +14,10 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -50,6 +50,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TankModel\TankModel.csproj">
+      <Project>{b8626885-71d0-4275-81fd-fbe9fa438f35}</Project>
+      <Name>TankModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TankView\TankView.csproj">
+      <Project>{8d2f280e-db34-4ec5-84d9-ab2c554512b0}</Project>
+      <Name>TankView</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TanlBl\TanlBl.csproj">
       <Project>{b1be6b22-9946-4dd8-aeb8-fe77fb1ea4bf}</Project>
       <Name>TanlBl</Name>

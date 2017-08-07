@@ -20,7 +20,6 @@ namespace TanlBl
         private string _shootVer = "-";
         private string[][] _frameOfPlay;
         private Frame _frame;
-        private bool _GameOver = true;
         private int _hight = 0;
         private int _width = 0;
         private string _emtyCell = " ";

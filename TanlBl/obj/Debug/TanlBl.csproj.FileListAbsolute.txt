@@ -1,5 +1,5 @@
 E:\ProjecktC#\Tank\TanlBl\bin\Debug\TanlBl.dll
 E:\ProjecktC#\Tank\TanlBl\bin\Debug\TanlBl.pdb
-E:\ProjecktC#\Tank\TanlBl\obj\Debug\TanlBl.csprojResolveAssemblyReference.cache
 E:\ProjecktC#\Tank\TanlBl\obj\Debug\TanlBl.dll
 E:\ProjecktC#\Tank\TanlBl\obj\Debug\TanlBl.pdb
+E:\ProjecktC#\Tank\TanlBl\obj\Debug\TanlBl.csprojResolveAssemblyReference.cache

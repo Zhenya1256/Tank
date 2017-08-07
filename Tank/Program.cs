@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using TanlBl;
+using System.Reflection;
+using TankView.Implements;
+using TankModel;
 
 namespace Tank
 {
@@ -12,11 +14,14 @@ namespace Tank
      
         static void Main(string[] args)
         {
-           Frame frame = new Frame();
-           frame.Visible();
-           MainMenu m = new MainMenu();
-        
+            //MoveComponent d = new MoveComponent();
+            Pressent pr = new Pressent();
+            Console.ReadKey();
         }
+    
+
+
+
         public static void Music()
         {
             while(true)
@@ -102,6 +107,21 @@ namespace Tank
             Console.Beep(494, 120);
             Thread.Sleep(150);
             Console.Beep(440, 120);
+        }
+    }
+    class Pressent
+    {
+        View d;
+        MyTank tank;
+        public Pressent()
+        {
+            d = new View();
+            tank = new MyTank();
+            d.Click_left += tank.MoveToLeft;
+            d.Click_down += tank.MoveToDown;
+            d.Click_right += tank.MoveToRight;
+            d.Click_up += tank.MoveToUp;
+            d.Click();
         }
     }
 }

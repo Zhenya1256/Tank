@@ -1,0 +1,5 @@
+E:\ProjecktC#\Tank\TankModel\bin\Debug\TankModel.dll
+E:\ProjecktC#\Tank\TankModel\bin\Debug\TankModel.pdb
+E:\ProjecktC#\Tank\TankModel\obj\Debug\TankModel.csprojResolveAssemblyReference.cache
+E:\ProjecktC#\Tank\TankModel\obj\Debug\TankModel.dll
+E:\ProjecktC#\Tank\TankModel\obj\Debug\TankModel.pdb

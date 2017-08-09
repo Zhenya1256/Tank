@@ -19,7 +19,7 @@ namespace TankView.Implements
             _drow.Visible();
             _drow.AddElement(29, 23, Sprits.tankUp);
             ElementsOnFrame();
-            _drow.Render();
+         //   _drow.Render();
         }
 
         private void ElementsOnFrame()

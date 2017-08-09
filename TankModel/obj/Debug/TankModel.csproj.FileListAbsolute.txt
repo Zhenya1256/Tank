@@ -3,3 +3,8 @@ E:\ProjecktC#\Tank\TankModel\bin\Debug\TankModel.pdb
 E:\ProjecktC#\Tank\TankModel\obj\Debug\TankModel.csprojResolveAssemblyReference.cache
 E:\ProjecktC#\Tank\TankModel\obj\Debug\TankModel.dll
 E:\ProjecktC#\Tank\TankModel\obj\Debug\TankModel.pdb
+E:\ProjecktC#\Tank\TankModel\bin\Debug\Facebook.dll
+E:\ProjecktC#\Tank\TankModel\bin\Debug\Facebook.xml
+E:\ProjecktC#\Tank\TankModel\obj\Debug\Interop.MediaPlayer.dll
+E:\ProjecktC#\Tank\TankModel\obj\Debug\Interop.WMPLib.dll
+E:\ProjecktC#\Tank\TankModel\obj\Debug\TankModel.csproj.ResolveComReference.cache

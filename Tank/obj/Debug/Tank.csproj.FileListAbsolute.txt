@@ -10,3 +10,5 @@ E:\ProjecktC#\Tank\Tank\bin\Debug\TankModel.dll
 E:\ProjecktC#\Tank\Tank\bin\Debug\TankView.dll
 E:\ProjecktC#\Tank\Tank\bin\Debug\TankModel.pdb
 E:\ProjecktC#\Tank\Tank\bin\Debug\TankView.pdb
+E:\ProjecktC#\Tank\Tank\bin\Debug\Facebook.dll
+E:\ProjecktC#\Tank\Tank\bin\Debug\Facebook.xml

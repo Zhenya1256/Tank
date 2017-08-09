@@ -4,7 +4,7 @@ using TanlBl.Abstract;
 
 namespace TanlBl
 {
-    class BotTank :ITank
+    class BotTank 
     {
         private string _tankUp = "O";
         private string _element = "#";
@@ -223,7 +223,7 @@ namespace TanlBl
 
         }
 
-        public void ShootDown(string tank, int x, int y)
+        private void ShootDown(string tank, int x, int y)
         {
             
                 int i = 1;
@@ -261,7 +261,7 @@ namespace TanlBl
 
         }
 
-        public void ShootLeft(string tank, int x, int y)
+        private void ShootLeft(string tank, int x, int y)
         {
            
                 int i = 1;
@@ -301,7 +301,7 @@ namespace TanlBl
 
         }
 
-        public void ShootRigth(string tank, int x, int y)
+        private void ShootRigth(string tank, int x, int y)
         {
             
                 int i = 1;
@@ -340,7 +340,7 @@ namespace TanlBl
 
         }
 
-        public void ShootUp(string tank, int x, int y)
+        private void ShootUp(string tank, int x, int y)
         {
             throw new NotImplementedException();
         }

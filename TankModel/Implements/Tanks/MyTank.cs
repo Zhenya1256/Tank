@@ -164,11 +164,10 @@ namespace TankModel
                     {
                         frameOfPlay[x - i + 1][y] = emtyCell;
                     }
-                    //frame.Render();
                     break;
                 }
                 Thread.Sleep(100);
-                frameOfPlay[x - i][y] = "-";
+                frameOfPlay[x - i][y] = "|";
 
                 if (tank != frameOfPlay[x - i + 1][y])
                 {
@@ -205,7 +204,7 @@ namespace TankModel
                     break;
                 }
                 Thread.Sleep(100);
-                frameOfPlay[x + i][y] = "-";
+                frameOfPlay[x + i][y] = "|";
 
                 if (tank != frameOfPlay[x + i - 1][y])
                 {
@@ -242,7 +241,7 @@ namespace TankModel
                     break;
                 }
                 Thread.Sleep(100);
-                frameOfPlay[x][y - i] = "|";
+                frameOfPlay[x][y - i] = "-";
 
                 if (tank != frameOfPlay[x][y - i + 1])
                 {
@@ -280,7 +279,7 @@ namespace TankModel
                     break;
                 }
                 Thread.Sleep(100);
-                frameOfPlay[x][y + i] = "|";
+                frameOfPlay[x][y + i] = "-";
 
                 if (tank != frameOfPlay[x][y + i - 1])
                 {

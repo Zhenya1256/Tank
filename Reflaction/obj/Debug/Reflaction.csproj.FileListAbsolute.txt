@@ -4,3 +4,5 @@ E:\ProjecktC#\Tank\Reflaction\bin\Debug\Reflaction.pdb
 E:\ProjecktC#\Tank\Reflaction\obj\Debug\Reflaction.exe
 E:\ProjecktC#\Tank\Reflaction\obj\Debug\Reflaction.pdb
 E:\ProjecktC#\Tank\Reflaction\obj\Debug\Reflaction.csprojResolveAssemblyReference.cache
+E:\ProjecktC#\Tank\Reflaction\bin\Debug\Facebook.dll
+E:\ProjecktC#\Tank\Reflaction\bin\Debug\Facebook.xml

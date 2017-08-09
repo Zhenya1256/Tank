@@ -14,7 +14,7 @@ namespace TankModel.Implements
         {
           
           _mp = new System.Windows.Media.MediaPlayer();
-            _mp.Open(new Uri(@"E:\Java\music.mp3"));
+          _mp.Open(new Uri(@"E:\ProjecktC#\Tank\TankModel\music.mp3"));
             //mp.Open(new Uri("c:\pathtomedia\MySound.wav"));
           
         }

@@ -39,6 +39,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,10 +64,6 @@
     <ProjectReference Include="..\TankView\TankView.csproj">
       <Project>{8d2f280e-db34-4ec5-84d9-ab2c554512b0}</Project>
       <Name>TankView</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TanlBl\TanlBl.csproj">
-      <Project>{b1be6b22-9946-4dd8-aeb8-fe77fb1ea4bf}</Project>
-      <Name>TanlBl</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

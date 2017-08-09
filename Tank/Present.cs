@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Reflection;
 using TankView.Implements;
 using TankModel;
@@ -52,7 +51,13 @@ namespace Tank
             view.StopMusic += music.Stop;
             view.GameOver += gameOver.End;
             view.newPlay += View_newPlay;
+          
+            view.Win += gameOver.Win;
+            view.MakeScreen += post.MakeScreen;
             view.Post += post.Post;
+
+            post.messageForUser += view.ShowMessage;
+            post.messageForUsertoEnd += view.ShowMessage;
             BotTank.stop += () => view.Stop;
 
         }

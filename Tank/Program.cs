@@ -9,18 +9,22 @@ using TankModel;
 using TankView.Abstract;
 using TankModel.Implements.Tanks;
 using TankModel.Implements;
+using Facebook;
+using System.Dynamic;
+using System.Drawing;
+using System.IO;
 
 namespace Tank
 {
     class Program
-    {
-     
+    {  
         static void Main(string[] args)
         {
-            Present pr = new Present();
+         
+            Present p = new Present();           
             Console.ReadKey();
         }
-    
+
     }
     
 }

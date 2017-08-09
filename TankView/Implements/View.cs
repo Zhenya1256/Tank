@@ -14,6 +14,7 @@ namespace TankView.Implements
         private string[][] _panel;
         private int _width;
         private int _hight;
+        private string _gameOver;
 
         public bool Stop
         {
@@ -31,7 +32,9 @@ namespace TankView.Implements
         public event Action StopMusic;
         public event Func<string[][], string[], string, int, int, bool> GameOver;
         public event Action newPlay;
-        public event Action Post;
+        public event Action<string> Post;
+        public event Func<string[][], string[], string, string,string, int, int,bool> Win;
+        public event Action MakeScreen;
 
         public View()
         {
@@ -126,20 +129,40 @@ namespace TankView.Implements
 
         public void Render()
         {
-            while (true)
+            bool gameover = true;
+            while (gameover)
             {
                 if (!Stop)
                 {
+                  
+
                     if (!GameOver(_panel, Sprits.GetSpritsTank(),"$", _width, _hight))
                     {
                         Thread.Sleep(20);
                         _draw.Render();
                     }
-                    else
+                      else
                     {
+                        if (MakeScreen != null)
+                        {
+                            MakeScreen();
+                        }
+                        _gameOver = "You lose in the play";
+                        gameover = false;
+                        PushFaceBook();
+
+                    }
+                    if (Win(_panel, Sprits.GetSpritsTank(), Sprits.emptyCell, "#","$", _width, _hight))
+                    {
+                        if (MakeScreen != null)
+                        {
+                            MakeScreen();
+                        }
+                        _gameOver = "You win in the play";
+                        gameover = false;
                         PushFaceBook();
                     }
-                   
+
                 }
             }
         }
@@ -147,16 +170,32 @@ namespace TankView.Implements
         public void PushFaceBook()
         {
             Console.Clear();
-            Console.WriteLine("Бажаете занести результаты на стинку Facebook");
+            Console.WriteLine(_gameOver);
+            Console.WriteLine("Бажаете занести результаты на стинку Facebook (Enter)");
+            ConsoleKeyInfo info = Console.ReadKey();
+            if (info.Key == ConsoleKey.Enter)
+            {
+                Post(_gameOver);
+            }
+
             Thread.Sleep(2000);
-            Post();
+            Console.WriteLine("Бажаете Продовжити (Enter)");
+            info = Console.ReadKey();
+            
+            if (info.Key == ConsoleKey.Enter)
+            {
+                newPlay.Invoke();
+
+            }
             Thread.Sleep(2000);
-            Console.WriteLine("Бажаете занести Продовжити");
-            Thread.Sleep(2000);
-            newPlay.Invoke();
+           
 
 
+        }
 
+        public void ShowMessage(string info)
+        {
+            Console.WriteLine(info);
         }
 
     }

@@ -14,14 +14,17 @@ namespace TankView.Abstract
         event Action<string[][], string[], string, string, int, int> Click_up;
         event Action<string[][], string, string, string,string,string, int, int> Click_Shoot;
         event Action<string[][], string ,int, int> ScriptBot;
+        event Func<string[][], string[], string, string,string ,int, int,bool> Win;
         event Action PlayMusic;
         event Action StopMusic;
-        event Func<string[][], string[], string , int, int,bool> GameOver;
+        event Func<string[][], string[], string, int, int,bool> GameOver;
         event Action newPlay;
-        event Action Post;
+        event Action<string> Post;
+        event Action MakeScreen;
         bool Stop { get; set; }
         void StartBot();
         void Click();
+        void ShowMessage(string info);
         void Render();
     }
 }

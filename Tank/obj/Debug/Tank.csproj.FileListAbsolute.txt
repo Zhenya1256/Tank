@@ -1,8 +1,6 @@
 E:\ProjecktC#\Tank\Tank\bin\Debug\Tank.exe.config
 E:\ProjecktC#\Tank\Tank\bin\Debug\Tank.exe
 E:\ProjecktC#\Tank\Tank\bin\Debug\Tank.pdb
-E:\ProjecktC#\Tank\Tank\bin\Debug\TanlBl.dll
-E:\ProjecktC#\Tank\Tank\bin\Debug\TanlBl.pdb
 E:\ProjecktC#\Tank\Tank\obj\Debug\Tank.csprojResolveAssemblyReference.cache
 E:\ProjecktC#\Tank\Tank\obj\Debug\Tank.exe
 E:\ProjecktC#\Tank\Tank\obj\Debug\Tank.pdb

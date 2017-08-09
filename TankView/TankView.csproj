@@ -48,6 +48,7 @@
     <Compile Include="Abstract\IMyEvent.cs" />
     <Compile Include="Implements\Construction.cs" />
     <Compile Include="Implements\Drow.cs" />
+    <Compile Include="Implements\MainMenu.cs" />
     <Compile Include="Implements\View.cs" />
     <Compile Include="Implements\Sprits.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

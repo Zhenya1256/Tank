@@ -154,29 +154,36 @@ namespace TankModel
 
             while (true)
             {
-                if (frameOfPlay[x - i][y] != emtyCell)
+                if (x - i > 0)
                 {
-                    if ((x - i) > 0)
+                    if (frameOfPlay[x - i][y] != emtyCell)
                     {
-                        frameOfPlay[x - i][y] = emtyCell;
+                        if ((x - i) > 0)
+                        {
+                            frameOfPlay[x - i][y] = emtyCell;
+                        }
+                        if (frameOfPlay[x - i + 1][y] != tank)
+                        {
+                            frameOfPlay[x - i + 1][y] = emtyCell;
+                        }
+                        break;
                     }
-                    if (frameOfPlay[x - i + 1][y] != tank)
+                    Thread.Sleep(100);
+                    frameOfPlay[x - i][y] = "|";
+
+                    if (tank != frameOfPlay[x - i + 1][y])
                     {
+
                         frameOfPlay[x - i + 1][y] = emtyCell;
                     }
+
+                    i++;
+                    //frame.Render();
+                }
+                else
+                {
                     break;
                 }
-                Thread.Sleep(100);
-                frameOfPlay[x - i][y] = "|";
-
-                if (tank != frameOfPlay[x - i + 1][y])
-                {
-
-                    frameOfPlay[x - i + 1][y] = emtyCell;
-                }
-
-                i++;
-                //frame.Render();
             }
 
 
